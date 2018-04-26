@@ -14,6 +14,9 @@ Example 1:
 Input: 22
 Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 
+To consolidate this into one number, You are tasked to find every self dividing number from 0 - 100000000 and take the average. 
+that number should be 41326660
+
 # Hint: 
 For each number in the range, check whether it is self dividing by converting that number to a character array (or string in Python), then checking that each digit is nonzero and divides the original number.
 
