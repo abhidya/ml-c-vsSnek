@@ -15,7 +15,7 @@ def selfDividingNumbers(test):
         if self_dividing(n):
            count = count +1
            average = n + average
-    return (average/count)
+    return average // count
 
-print(selfDividingNumbers( (100000000)))
-
+upper = int(sys.argv[1]) if len(sys.argv) > 1 else 100000000
+print(selfDividingNumbers(upper))

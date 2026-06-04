@@ -1,6 +1,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -38,10 +39,14 @@ class Solution
     }
 };
 
-int main()
+int main(int argc, char** argv)
 {
     Solution s;
+    long int upper = 100000000;
+    if(argc > 1) {
+        upper = std::strtol(argv[1], nullptr, 10);
+    }
 
-    cout << s.selfDividingNumbers(100000000);
+    cout << s.selfDividingNumbers(upper) << endl;
     return 0;
 }

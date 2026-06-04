@@ -10,6 +10,22 @@ This is an archived coding-speed comparison exercise for a self-dividing-number 
 - Python sources: `python.py` and `sol.py`.
 - Prefer rebuilding binaries locally instead of committing new compiled executables.
 
+## Smoke check
+
+```bash
+make smoke
+```
+
+The smoke builds both C++ entries into `build/` and checks the known `0..22`
+self-dividing-number average (`8`) against both Python entries. The original
+full-range benchmark remains:
+
+```bash
+make
+time ./build/will
+time python3 sol.py
+```
+
 # Self Dividing Numbers
 
 A self-dividing number is a number that is divisible by every digit it contains.
