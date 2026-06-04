@@ -1,5 +1,15 @@
 # ml-c-vsSnek
 
+## Archive status
+
+This is an archived coding-speed comparison exercise for a self-dividing-number challenge. It includes C++ and Python attempts plus timing notes.
+
+## Local run notes
+
+- C++ sources: `c++.cpp` and `will.cpp`.
+- Python sources: `python.py` and `sol.py`.
+- Prefer rebuilding binaries locally instead of committing new compiled executables.
+
 # Self Dividing Numbers
 
 A self-dividing number is a number that is divisible by every digit it contains.
